@@ -1,4 +1,5 @@
 html
 comment : ctrl+k+c
 uncomment: ctrl+k+u
-<!
+comment : <!--type here -->
+meta tag: DOCTYPE, title, meta, style
