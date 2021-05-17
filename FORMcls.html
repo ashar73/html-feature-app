@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--adding bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+    <form>
+        <h1>HTML Form</h1>
+        <b>FirstName:</b> <input type="text" name="FirstName" class="form-control w-50" placeholder="First name">
+        <b>LastName:</b> <input type="text" name="LastName" class="form-control w-50" placeholder="last name" required>
+        <h4>Password Control</h4>
+        <b>Password</b> <input type="password" name="password" class="form-control w-50" placeholder="password" ><!--value secret makes the pwrd encrypted-->
+        <h4>MUltiple Input Control</h4>
+        <textarea placeholder="enter text here" name="description" cols="50" rows="10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla sunt omnis iusto quibusdam totam maxime facere, unde in fugiat, dolores recusandae natus ratione voluptas atque blanditiis saepe temporibus suscipit!
+        </textarea><br>
+        <button class="btn btn-primary">Submit</button><br>
+        <h4>CheckBox</h4>
+        <input type="checkbox" name="" value="mathh" checked>math
+        <input type="checkbox" name="" value="physics">physics
+        <input type="checkbox" name="" value="chemistry">chemistry<br>
+        <input type="radio" name="1">male<!--if we put same name then only one can be selected-->
+        <input type="radio" name="1">female<br>
+        
+        <h4>  Select box control</h4>
+        <select name="dropdown" class="form-control w-50">
+            <option value="nepal">nepal</option>
+            <option value="india" selected>india</option><!-- due to selected : india will be selected by default -->
+            <option value="Japan">Japan</option>
+            <option value="syria">syria</option>
+        </select><br>
+        <input type="file" name="Upload"><br>
+        <input type="file" name="Upload1" accept="image/png, image/jpeg">
+
+
+    </form>
+    </div>
+</body>
+</html>
