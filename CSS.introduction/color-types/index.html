@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors</title>
+    <style>
+        .container{
+            position: relative;
+            margin-right: 30px;
+            margin-left: 30px;
+            <!--margin left and right is added to make overall margin of 60px-->
+            margin-top: 30px;
+        }
+        .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15{
+            position: relative;
+            left: 40%;
+            height: 80px;
+            width: 80px;
+        }
+        .p1{
+            background-color:blue;
+        }
+        .p2{
+            background-color:red;
+        }
+        .p3{
+            background-color:yellow;
+        }
+        .p4{
+            background-color:crimson;
+        }
+        .p5{
+            background-color:olive;
+        }
+        .p6{background-color:darkviolet;}
+        .p7{background-color:greenyellow;}
+        .p8{background-color:lightseagreen}
+        .p9{background-color:saddlebrown}
+        .p10{background-color:steelblue;}
+        .p11{background-color:#ff0000}
+        .p12{background-color:#00ff00;}
+        .p13{background-color:#0000ff}
+        .p14{background-color:rgb(19, 13, 9)} <!--rgb range 0-255-->
+        .p15{background-color:steelblue;}
+    </style>
+</head>
+<body>
+    <div class="container" style="float: left; border: 2px solid black;" >
+        <!--float left will only take left area which is required by the content-->
+    <h1>Standard colors</h1>
+    <P class="p1">Lorem ipsum dolor sit amet.</P>
+    <P class="p2">Lorem ipsum dolor sit amet.</P>
+    <P class="p3">Lorem ipsum dolor sit amet.</P>
+    <P class="p4">Lorem ipsum dolor sit amet.</P>
+    <P class="p5">Lorem ipsum dolor sit amet.</P>
+    </div>
+    <div class="container" style="float: left; border: 2px solid black;">
+        <h1>HTML 5 colors</h1>
+        <P class="p6">Lorem ipsum dolor sit amet.</P>
+        <P class="p7">Lorem ipsum dolor sit amet.</P>
+        <P class="p8">Lorem ipsum dolor sit amet.</P>
+        <P class="p9">Lorem ipsum dolor sit amet.</P>
+        <P class="p10">Lorem ipsum dolor sit amet.</P>
+    </div>
+    <div class="container" style="float: left; border:2px solid black;">
+        <!--every hexa decimal color is made up of 2red 2green 2blue where 00 islowest resolution
+        and ff is highest resolution-->
+        <h1>HexaDecimal colors</h1>
+        <P class="p11">Lorem ipsum dolor sit amet.</P>
+        <P class="p12">Lorem ipsum dolor sit amet.</P>
+        <P class="p13">Lorem ipsum dolor sit amet.</P>
+        <P class="p14">Lorem ipsum dolor sit amet.</P>
+        <P class="p15">Lorem ipsum dolor sit amet.</P>
+    </div>
+</body>
+</html>
