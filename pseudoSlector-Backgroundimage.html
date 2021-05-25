@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo Selector and Background image</title>
+    <style>
+        body{
+            background-image: url("building.jpg");
+            /*unable to display full image*/
+            background-repeat: no-repeat;
+        }
+        .headline{
+            height: 80px;
+            width: 100%;/*doesnt cover whole width*/
+            background-color:white;
+            margin-top: -10px;
+            margin-left: 0px;
+            margin-right: -10px;
+        }
+        img{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 60px;
+            float: left;
+        }
+        select{
+            margin-top: 26px;
+            margin-left: 30px;
+            height: 30px;
+            float: left;
+        }
+        span{
+            margin: 30px;
+            float: left;
+        }
+        select:hover{background-color:grey; color: white;}
+        a:hover{color: grey;}
+        button:hover{background-color: grey;}
+        button{
+            margin-right: 30px;
+            margin-top: 20px;
+            padding: 7px 40px;
+            border-radius: 12px;
+            float: right;
+            background-color:blue;
+            color: white;
+            font-size: 15px;  
+        }
+        h1:hover{color: rgba(#ffffff,0,0, 0.6);}
+        .pic{
+            margin-top: 60px;
+            height: 350px;
+            float: right;
+            width: 450px;
+            
+        }
+        .pic:hover{opacity: 0.6;}
+        h1{
+            font-size: 100px; 
+            color: white; 
+            float: left
+            
+        }
+    </style>
+</head>
+<body>
+<div class="headline">
+    <img src="wix.png" alt="wixLOGO">
+    <!--how to write the name on dropdown menu bar-->
+    <select name="deopdown" id=""> 
+        <option value="">Creation Platform</option>
+        <option value="">Website Essential</option>
+        <option value="">Hire a Partner</option>
+    </select>
+    <select name="deopdown" id=""> 
+        <option value="">Business</option>
+        <option value="">Website Essential</option><!--how to apply anchor tag in option-->
+        <option value="">Hire a Partner</option>
+    </select>
+    <select name="deopdown" id=""> 
+        <option value="">Growth</option>
+        <option value="">Website Essential</option>
+        <option value="">Hire a Partner</option>
+    </select>
+    <select name="deopdown" id=""> 
+        <option value="">Resources</option>
+        <option value="">Website Essential</option>
+        <option value="">Hire a Partner</option>
+    </select>
+    <span style="font-size: 20px;"><a href="http://">Pricing</a></span>
+    <button>Sign In</button>
+</div>
+<div>
+    <h1>Create Website<br> you are proud of</h1>
+    <img class="pic" src="apple.jpg" alt="">
+</div>
+    
+</body>
+</html>
