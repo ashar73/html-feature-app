@@ -1,0 +1,125 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding:0;
+}
+#logo img{
+    height: 3em; 
+    width: 3em;
+    border-radius: 10px;
+    margin: 10px;
+}
+/* Navigation Bar */
+#navbar{
+    display:flex;  /* flex will let the list to appear next to logo */
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex; /* make the list horizontally */
+} 
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -2;
+    /* opacity: .8; */
+}
+#navbar ul li{
+    list-style: none;  /* it will remove the bullets from list item */
+    font-size: 1.3rem;
+    margin-left:2px;
+}
+#navbar ul li a{
+     display: block; /*coz padding will not apply on inline element */
+     padding: 3px 10px;
+     border-radius: 20px;
+     text-decoration: none; /* it will remove underline from anhor tag item */
+     color: white;
+}
+#navbar ul li a:hover{
+     background-color:grey;
+     font-size: large;
+}
+/* login and button */
+
+.login{
+    padding: 5px;
+    border: none;
+    background-color: blue;
+    width: 4em;
+    height: 1.7em;
+    display: flex;
+    color: white;
+    border-radius: 3px;
+    margin-top: 3px;
+    
+    
+}
+.login:hover{
+    background-color: red;
+    
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding-top: -10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    
+}
+#home::before{
+    content: "";
+    background:url("images/homeBG.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    opacity: 1;
+    z-index: -1;
+    }
+input{height: 18px;margin: 3px;}
+.btn:hover{background-color: grey;}
+.btn{height: 7vh;width: 10vw; border-radius: 2px;border-style: none; color:white;background-color:green;
+padding-top: 5px;}
+#itemType{
+text-align: center;
+background-color: grey;
+margin-top: 80px;
+width: 100vw;
+height: 70vh;
+display: flex;
+
+
+}
+.box{
+    height: 13em;
+    width:12em;
+    /* border:2px solid black; */
+    margin: 10px 10px;
+    position: relative;
+    left: 8em;
+    opacity: 1;
+}
+h3{
+color: white;
+
+}
+.box1 img{
+height: 13em;
+width: 12em;
+}
+.box2 img{
+height: 13em;
+width: 12em;
+}
+.box3 img{
+height: 13em;
+width: 12em;
+}
+
